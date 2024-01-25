@@ -7,9 +7,7 @@ jobs:
   assign:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
       - name: Assign to SantaClaus
-        run: gh pr edit ${{ github.event.number }} --add-reviewer SantaClaus --add-assignee @me
+        run: gh pr edit ${{ github.event.number }} --add-reviewer @me --add-assignee @me --body "Assign to SantaClaus"
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
