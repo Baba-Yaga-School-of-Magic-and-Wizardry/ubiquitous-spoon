@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Assign to SantaClaus
-        run: gh pr edit ${{ github.event.number }} --assign SantaClaus
+        run: gh pr edit ${{ github.event.number }} --add-reviewer SantaClaus --add-assignee @me
