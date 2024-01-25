@@ -1,4 +1,4 @@
 # ubiquitous-spoon
 Automated PR assignment
 
-badger
+436-latin-bronze-rodent
