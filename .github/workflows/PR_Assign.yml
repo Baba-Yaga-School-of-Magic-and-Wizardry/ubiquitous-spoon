@@ -9,3 +9,5 @@ jobs:
     steps:
       - name: Assign to SantaClaus
         run: gh pr edit ${{ github.event.number }} --add-reviewer SantaClaus --add-assignee @me
+        env:
+          GH_TOKEN: ${{ github.token }}
