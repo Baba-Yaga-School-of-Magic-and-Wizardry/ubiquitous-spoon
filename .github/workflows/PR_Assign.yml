@@ -1,0 +1,11 @@
+name: Assign PR to SantaClaus
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign to SantaClaus
+        run: gh pr edit ${{ github.event.number }} --assign SantaClaus
